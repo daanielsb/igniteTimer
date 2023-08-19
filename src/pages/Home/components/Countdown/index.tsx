@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react'
 import { CountdownContainer, Separator } from './styles'
 import { differenceInSeconds } from 'date-fns'
-import { CyclesContext } from '../..'
+import { CyclesContext } from '../../../../contexts/CyclesContext'
 
 export function Countdown() {
   const {
@@ -58,7 +58,7 @@ export function Countdown() {
     if (activeCycle) {
       document.title = `${minutes}:${seconds}`
     } else if (!activeCycle && amountSecondsPassed > 0) {
-      document.title = `Timer Finalizado`
+      document.title = `Timer interrompido`
     }
   }, [minutes, seconds, activeCycle, amountSecondsPassed])
   return (
