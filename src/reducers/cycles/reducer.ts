@@ -22,6 +22,9 @@ export function cyclesReducer(state: CyclesState, action: any) {
         draft.cycles.push(action.payload.newCycle)
         draft.activeCycleId = action.payload.newCycle.id
       })
+
+    // Colocar INTERRUPT_CURRENT_CYCLE e MARK_CURRENT_CYCLE_AS_FINISHED no immer também
+
     case ActionTypes.INTERRUPT_CURRENT_CYCLE:
       return {
         ...state,
