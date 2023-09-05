@@ -54,3 +54,5 @@ export function cyclesReducer(state: CyclesState, action: any) {
       return state
   }
 }
+
+// ultimos ajustes e fazer deploy no codigo
