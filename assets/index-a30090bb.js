@@ -53,7 +53,7 @@ Error generating stack: `+o.message+`
     }
 
     body {
-        background: red;
+        background: ${e=>e.theme["gray-900"]};
         color: ${e=>e.theme["gray-300"]};
         -webkit-font-smoothing: antialiased;
     }
